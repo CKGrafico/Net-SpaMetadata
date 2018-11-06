@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaMetadata", "SpaMetadata\SpaMetadata.csproj", "{3BD4FBCF-2DDD-4F21-B1E5-8736016478B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleSpaMetadata", "ExampleSpaMetadata\ExampleSpaMetadata.csproj", "{F7E3D3EA-5783-402A-A09E-40DADE600844}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD4FBCF-2DDD-4F21-B1E5-8736016478B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD4FBCF-2DDD-4F21-B1E5-8736016478B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD4FBCF-2DDD-4F21-B1E5-8736016478B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD4FBCF-2DDD-4F21-B1E5-8736016478B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E3D3EA-5783-402A-A09E-40DADE600844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E3D3EA-5783-402A-A09E-40DADE600844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E3D3EA-5783-402A-A09E-40DADE600844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E3D3EA-5783-402A-A09E-40DADE600844}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8448A079-2B8A-465A-895A-1DF67152B0DB}
+	EndGlobalSection
+EndGlobal

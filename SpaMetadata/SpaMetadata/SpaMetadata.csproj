@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Middleware to change the metadata for each url, useful for SPA where you have only one entry point.</Description>
+    <Copyright>http://ckgrafico.com</Copyright>
+    <PackageLicenseUrl>https://github.com/CKGrafico/Net-SpaMetadata/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CKGrafico/Net-SpaMetadata</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CKGrafico/Net-SpaMetadata</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
