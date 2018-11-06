@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AI Storytelling</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico?v1" />
+    <meta name="twitter:card" content="[twitter:card]">
+    <meta name="twitter:title" content="[metadata:title]">
+    <meta name="twitter:description" content="[metadata:description]">
+    <meta name="twitter:image" content="[metadata:image]">
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="[metadata:title]" />
+    <meta property="og:description" content="[metadata:description]" />
+    <meta property="og:image" content="[metadata:image]" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Homepage <a href="/" target="_self">link</a></li>
+        <li>Page1 <a href="/page1" target="_self">link</a></li>
+        <li>Page2 <a href="/page2" target="_self">link</a></li>
+        <li>Unkonwnpage <a href="/ckgrafico" target="_self">link</a></li>
+    </ul>
+
+    <div class="js-code">Loading source</div>
+
+    <script>
+        (function () {
+            //From https://stackoverflow.com/questions/1815021/programmatically-open-view-source-html-window-in-browser-with-javascript
+            var source = "<head>";
+            source += document.getElementsByTagName('head')[0].innerHTML;
+            source += "</head>";
+            //now we need to escape the html special chars, javascript has escape
+            //but this does not do what we want
+            source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            //now we add <pre> tags to preserve whitespace
+            source = "<pre>" + source + "</pre>";
+            document.querySelector('.js-code').innerHTML = source;
+        })();
+    </script>
+</body>
+</html>

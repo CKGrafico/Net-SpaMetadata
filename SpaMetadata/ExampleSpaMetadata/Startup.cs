@@ -3,6 +3,7 @@ using ExampleSpaMetadata.Infraestructure;
 using ExampleSpaMetadata.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +26,13 @@ namespace ExampleSpaMetadata
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IExampleDataService, ExampleDataService>();
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSpaStaticFiles(config =>
+            {
+                config.RootPath = "wwwroot";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +56,6 @@ namespace ExampleSpaMetadata
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "ClientApp";
                 spa.ApplicationBuilder.UseMetaDataMiddleware(new List<MetadataMiddlewareOptions>
                 {
                     // This metadata affects to all the routes that are not included in the list
