@@ -51,6 +51,7 @@ namespace ExampleSpaMetadata
                 spa.Options.SourcePath = "ClientApp";
                 spa.ApplicationBuilder.UseMetaDataMiddleware(new List<MetadataMiddlewareOptions>
                 {
+                    // This metadata affects to all the routes that are not included in the list
                     new MetadataMiddlewareOptions
                     {
                         FilterPath = "/",
@@ -75,6 +76,8 @@ namespace ExampleSpaMetadata
                             };
                         }
                     },
+
+                    // This metadata will only affect to /page1
                     new MetadataMiddlewareOptions
                     {
                         FilterPath = "page1",
@@ -101,6 +104,8 @@ namespace ExampleSpaMetadata
                             };
                         }
                     },
+
+                    // This metadata will only affect to /page2
                     new MetadataMiddlewareOptions
                     {
                         FilterPath = "page2",
