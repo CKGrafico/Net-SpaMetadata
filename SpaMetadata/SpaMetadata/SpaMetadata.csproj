@@ -8,6 +8,7 @@
     <PackageLicenseUrl>https://github.com/CKGrafico/Net-SpaMetadata/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CKGrafico/Net-SpaMetadata</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CKGrafico/Net-SpaMetadata</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
