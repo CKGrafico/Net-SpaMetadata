@@ -41,7 +41,7 @@ namespace SpaMetadata
 
                 await _next(httpContext);
 
-                if (httpContext.Response.StatusCode >= StatusCodes.Status400BadRequest || !httpContext.Response.ContentType.Equals("text/html"))
+                if (httpContext.Response.StatusCode >= StatusCodes.Status400BadRequest || !httpContext.Response.ContentType.Contains("text/html"))
                 {
                     return;
                 }
